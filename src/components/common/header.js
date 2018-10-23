@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class Header extends Component {
     render() {
         return (
-            <header className="navbar navbar-expand-md navbar-light bg-transparent">
+            <header className="navbar navbar-expand-md navbar-light" style={{backgroundColor:'white'}} >
                 <div className="container">
                     <a className="navbar-brand" href="/">
                       {/* <img src={logo} alt=""/> */}

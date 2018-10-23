@@ -8,17 +8,12 @@ class App extends Component {
   render() {
     return (
       <div style={{backgroundColor:'lightblue',height:'-webkit-fill-available'}} >
-        <div>
-          <Header />
-        </div>
         <div className='row' >
           <div className="col-md-2" >
             <SideBar />
           </div>
           <div className="col-md-8" >
-
-              <Routes />
-
+              component
           </div>
         </div>
       </div>

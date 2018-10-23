@@ -7,16 +7,22 @@ class SideBar extends Component {
         return (
           <div 
           style={{
-            width: '40%',
-            marginLeft: '40%',
+            width: '35%',
+            marginLeft: '15%',
             backgroundColor: 'white'}}
           >
           <SideNav 
             defaultSelectedPath="1"
           >
-            <Nav id="1">Item 1</Nav>
-            <Nav id="2">Item 2</Nav>
-            <Nav id="3">Item 3</Nav>
+            <Nav id="1">
+               <Link to='/overView' >1</Link>
+            </Nav>
+            <Nav id="2">
+               2
+            </Nav>
+            <Nav id="3">
+               3
+            </Nav>
         </SideNav>
         </div>
         )
