@@ -4,7 +4,6 @@ import { Provider } from "react-redux";
 import createStore from "./store/createStore";
 
 import OverView from './modules/overview';
-import Header from './components/common/header'
 import App from './App'
 
 
@@ -13,12 +12,11 @@ const Routes = () => {
     return (
         <Provider store={store}>
             <Router>
-              <div>
-                <Header />
-                <Route exact path="/" component={App}>
-                  <Route exact path="/overview" component={OverView}/>
+                <App>
+                <Route path='/' component={OverView}>
+                  <Route path="overview" component={OverView}/>
                 </Route>
-                </div>
+                </App>
             </Router>
         </Provider>        
     );
