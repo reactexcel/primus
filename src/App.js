@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SideBar from './components/common/sidebar';
+import Header from './components/common/header'
+import Routes from './router'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div style={{backgroundColor:'lightblue',height:'-webkit-fill-available'}} >
+        <div>
+          <Header />
+        </div>
+        <div className='row' >
+          <div className="col-md-2" >
+            <SideBar />
+          </div>
+          <div className="col-md-8" >
+
+              <Routes />
+
+          </div>
+        </div>
       </div>
     );
   }
