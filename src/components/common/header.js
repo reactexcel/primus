@@ -20,7 +20,6 @@ class Header extends Component {
                         <li className="nav-item"><a className="nav-link" href="#!">FAQ</a></li>
                     </ul>
                     <button type="button" className="btn btn-primary ml-auto mr-1">Login</button>
-                    <a href="/cleaners/" className="btn btn-success ml-2">Cleaning jobs</a>
                     </div>
                 </div>
             </header>
