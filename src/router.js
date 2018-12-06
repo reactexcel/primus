@@ -13,9 +13,9 @@ const Routes = () => {
         <Provider store={store}>
             <Router>
                 <App>
-                <Route path='/' component={OverView}>
-                  <Route path="overview" component={OverView}/>
-                </Route>
+                    <Route path='/' component={OverView}>
+                    <Route path="overview" component={OverView}/>
+                    </Route>
                 </App>
             </Router>
         </Provider>        
